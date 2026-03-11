@@ -1,0 +1,16 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="520" rx="72" fill="#FFF8F4"/>
+  <ellipse cx="260" cy="418" rx="144" ry="28" fill="#CF8B7F" fill-opacity="0.28"/>
+  <circle cx="257" cy="234" r="136" fill="url(#paint0_linear_22_11)"/>
+  <circle cx="257" cy="234" r="56" fill="#FFF8F4"/>
+  <circle cx="257" cy="234" r="20" fill="#E28E85"/>
+  <path d="M161.5 134.5C195.1 118.5 241.833 113.5 261 114.5C322.2 117.7 364.167 145.833 377.5 160C358.5 171.5 327.7 200.7 301.5 249.5C275.3 298.3 273.833 347.5 277.5 366C219.5 378.4 173 354.5 152 340.5C135.6 298.1 136.167 232.167 140 203.5C143.2 180.7 150.833 149.5 161.5 134.5Z" fill="#FFF8F4"/>
+  <path d="M168.5 129C208.1 145 264.333 170.333 288 181.5C345.2 208.3 375.5 260.333 383.5 283C377.5 327.8 341.667 359 324.5 369C298.9 380.6 266.833 384.5 254 384.5C244.833 342.333 234.8 258.3 270 200.5C305.2 142.7 340.333 113.5 353.5 106C321.9 100 243.667 102.833 208.5 109.5C180.1 114.9 160.333 123.167 154 127C158 126 162.9 126.7 168.5 129Z" fill="#F6D3C7"/>
+  <text x="260" y="455" text-anchor="middle" fill="#241B1E" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="700">2 PLY</text>
+  <defs>
+    <linearGradient id="paint0_linear_22_11" x1="121" y1="98" x2="393" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD7C6"/>
+      <stop offset="1" stop-color="#DF7180"/>
+    </linearGradient>
+  </defs>
+</svg>

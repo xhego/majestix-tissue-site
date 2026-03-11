@@ -1,0 +1,133 @@
+<div class="page-shell">
+  <mat-toolbar class="topbar">
+    <div class="brand-mark">
+      <img src="assets/logo/majestix-logo.svg" alt="Majestix Tissue Manufacturing logo">
+      <div>
+        <p>Majestix Tissue</p>
+        <span>Manufacturing</span>
+      </div>
+    </div>
+
+    <a mat-stroked-button class="contact-button" href="#contact">Request a quote</a>
+  </mat-toolbar>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <mat-chip-set>
+          <mat-chip>Elegant tissue solutions</mat-chip>
+          <mat-chip>1 ply, 2 ply, 3 ply</mat-chip>
+        </mat-chip-set>
+
+        <h1>Professional toilet tissue products with a refined brand presence.</h1>
+        <p class="hero-text">
+          Majestix Tissue Manufacturing delivers reliable, comfortable and beautifully presented tissue products
+          for businesses that care about quality, consistency and customer experience.
+        </p>
+
+        <div class="hero-actions">
+          <a mat-flat-button class="primary-cta" href="#products">Explore the range</a>
+          <a mat-button class="secondary-cta" href="#contact">Speak to sales</a>
+        </div>
+
+        <div class="quick-highlights">
+          <article *ngFor="let item of highlights">
+            <mat-icon>verified</mat-icon>
+            <span>{{ item }}</span>
+          </article>
+        </div>
+      </div>
+
+      <mat-card class="carousel-card" id="products">
+        <div class="carousel-frame">
+          <div class="carousel-image-panel">
+            <img [src]="activePly.image" [alt]="activePly.name + ' toilet tissue'">
+          </div>
+
+          <div class="carousel-copy">
+            <span class="eyebrow">Featured Ply Selection</span>
+            <h2>{{ activePly.name }}</h2>
+            <h3>{{ activePly.headline }}</h3>
+            <p>{{ activePly.description }}</p>
+
+            <div class="spec-grid">
+              <div>
+                <span>Best for</span>
+                <strong>{{ activePly.bestFor }}</strong>
+              </div>
+              <div>
+                <span>Finish</span>
+                <strong>{{ activePly.finish }}</strong>
+              </div>
+            </div>
+
+            <div class="carousel-dots" aria-label="Ply selections">
+              <button
+                *ngFor="let ply of plyOptions; let i = index"
+                type="button"
+                [class.active]="i === activeIndex"
+                [attr.aria-label]="'Show ' + ply.name"
+                (click)="setSlide(i)"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </section>
+
+    <section class="value-strip">
+      <article *ngFor="let item of capabilities">
+        <mat-icon>workspace_premium</mat-icon>
+        <p>{{ item }}</p>
+      </article>
+    </section>
+
+    <section class="about-section">
+      <div class="section-copy">
+        <span class="section-tag">Why Majestix</span>
+        <h2>Manufacturing tissue products that feel premium and perform at scale.</h2>
+        <p>
+          We position every roll as a reflection of your business standards, combining efficient production with a
+          polished finish suitable for retail shelves, washroom facilities and hospitality environments.
+        </p>
+      </div>
+
+      <div class="info-cards">
+        <mat-card>
+          <span>Supply</span>
+          <h3>Wholesale-ready output</h3>
+          <p>Steady production planning for distributors, resellers and commercial procurement teams.</p>
+        </mat-card>
+
+        <mat-card>
+          <span>Presentation</span>
+          <h3>Elegant peach-and-black branding</h3>
+          <p>A modern visual identity designed to communicate cleanliness, softness and premium appeal.</p>
+        </mat-card>
+
+        <mat-card>
+          <span>Quality</span>
+          <h3>Comfort across every ply</h3>
+          <p>Options tailored for value-driven operations, balanced everyday use and high-end guest settings.</p>
+        </mat-card>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <span class="section-tag">Contact</span>
+        <h2>Let’s supply your business with the right tissue range.</h2>
+      </div>
+
+      <div class="contact-actions">
+        <a mat-flat-button class="primary-cta" href="mailto:sales@majestixtissue.com">sales&#64;majestixtissue.com</a>
+        <a mat-stroked-button class="contact-button" href="tel:+27000000000">Call sales team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <mat-divider></mat-divider>
+    <p>Majestix Tissue Manufacturing. Elegant tissue solutions for modern businesses.</p>
+  </footer>
+</div>
