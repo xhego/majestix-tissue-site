@@ -1,16 +1,45 @@
-<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="520" height="520" rx="72" fill="#FFF8F4"/>
-  <ellipse cx="260" cy="418" rx="144" ry="28" fill="#E3B7A8" fill-opacity="0.45"/>
-  <circle cx="257" cy="237" r="132" fill="url(#paint0_linear_22_10)"/>
-  <circle cx="257" cy="237" r="52" fill="#FFF8F4"/>
-  <circle cx="257" cy="237" r="18" fill="#E7A895"/>
-  <path d="M167 139C220.2 111.4 281.833 111.833 306 116.5C347 124.5 377 154.5 386 189.5C397.2 232.7 393.333 287.167 388.5 309C364.5 287.5 309.7 257.5 270.5 250.5C219.5 241.5 182 257.5 149.5 275.5C133.9 230.3 135.667 170.333 167 139Z" fill="#FFF8F4"/>
-  <path d="M147 267C193.5 241 248.5 235 273.5 238.5C336.7 248.1 381.167 286.5 395 304.5C377.5 342.5 332.2 380 265 381C213.8 381.8 168 350.167 149.5 334.5C138.3 310.9 140.167 281.667 147 267Z" fill="#F3D6CC"/>
-  <text x="260" y="455" text-anchor="middle" fill="#241B1E" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="700">1 PLY</text>
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="88" fill="#FFF8F3"/>
+  <ellipse cx="454" cy="740" rx="244" ry="52" fill="#000000" fill-opacity="0.08"/>
+  <g>
+    <path d="M210 395C210 365.729 233.729 342 263 342H385C414.271 342 438 365.729 438 395V591C438 620.271 414.271 644 385 644H263C233.729 644 210 620.271 210 591V395Z" fill="url(#wrapBody)"/>
+    <ellipse cx="324" cy="388" rx="104" ry="28" fill="#F0B4B3"/>
+    <ellipse cx="324" cy="388" rx="33" ry="11" fill="#C98E8C"/>
+    <ellipse cx="324" cy="388" rx="17" ry="6" fill="#9F7272"/>
+    <path d="M210 395C210 365.729 233.729 342 263 342H385C414.271 342 438 365.729 438 395V463C410.667 477 372.667 484 324 484C277.333 484 239.333 476.667 210 462V395Z" fill="#FFFFFF" fill-opacity="0.16"/>
+    <g transform="translate(245 425)">
+      <rect x="0" y="0" width="157" height="99" rx="28" fill="#111111" fill-opacity="0.78"/>
+      <circle cx="36" cy="30" r="25" fill="url(#logoCircle)"/>
+      <path d="M22 27C26.8 16.2 35.6 10.3333 39 8.5L43 11.5C39.6667 14.5 36 20.3667 35.5 25.5C35 30.6333 31.2 34.9333 29.5 36.5C25.1 40.1 20.6 40.9 17 40C19.9333 37.6 20.8 30.6 22 27Z" fill="#FFF8F3"/>
+      <path d="M17 46C23.8 50.8 33.5 52.4 37.5 52.5C50.5667 52.5 57.7333 48.8 63 42.5" stroke="#FFF8F3" stroke-width="3.8" stroke-linecap="round"/>
+      <path d="M17 55C24.6 59 34.1667 60.5333 38 60.5C49.6 60.5 58.1667 57.8667 64 53" stroke="#FFF8F3" stroke-width="3.8" stroke-linecap="round" opacity="0.85"/>
+      <text x="77" y="36" fill="#F7C3B4" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="700">Majestix</text>
+      <text x="77" y="60" fill="#FFF8F3" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="2">TISSUE</text>
+    </g>
+  </g>
+  <g>
+    <path d="M438 423C438 392.072 463.072 367 494 367H602C632.928 367 658 392.072 658 423V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V423Z" fill="url(#paperBody)"/>
+    <ellipse cx="548" cy="405" rx="101" ry="27" fill="#FFFDF9"/>
+    <ellipse cx="548" cy="405" rx="34" ry="12" fill="#D9D1C4"/>
+    <ellipse cx="548" cy="405" rx="16" ry="6" fill="#A89F95"/>
+    <path d="M525 485L699 661H502L525 485Z" fill="#F7F1E2"/>
+    <path d="M528 483L677 636H603L523 560L528 483Z" fill="#FFF8EC"/>
+    <path d="M438 423C438 392.072 463.072 367 494 367H602C632.928 367 658 392.072 658 423V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V520C470 537.333 507.667 546 551 546C593 546 628.667 537.333 658 520V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V423Z" fill="#000000" fill-opacity="0.04"/>
+  </g>
+  <rect x="301" y="757" width="300" height="56" rx="28" fill="#171214"/>
+  <text x="451" y="794" text-anchor="middle" fill="#FFF8F3" font-family="Manrope, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="7">1 PLY</text>
   <defs>
-    <linearGradient id="paint0_linear_22_10" x1="125" y1="107" x2="389" y2="370" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FBE9E2"/>
-      <stop offset="1" stop-color="#E59686"/>
+    <linearGradient id="wrapBody" x1="220" y1="350" x2="436" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9C0B8"/>
+      <stop offset="1" stop-color="#D56776"/>
+    </linearGradient>
+    <linearGradient id="logoCircle" x1="11" y1="5" x2="61" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6B5C4"/>
+      <stop offset="1" stop-color="#EA5A78"/>
+    </linearGradient>
+    <linearGradient id="paperBody" x1="445" y1="379" x2="659" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#ECE5D8"/>
     </linearGradient>
   </defs>
 </svg>

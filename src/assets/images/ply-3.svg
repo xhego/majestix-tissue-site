@@ -1,16 +1,47 @@
-<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="520" height="520" rx="72" fill="#FFF8F4"/>
-  <ellipse cx="260" cy="418" rx="144" ry="28" fill="#CF8B7F" fill-opacity="0.26"/>
-  <circle cx="260" cy="229" r="140" fill="url(#paint0_linear_22_12)"/>
-  <circle cx="260" cy="229" r="62" fill="#FFF8F4"/>
-  <circle cx="260" cy="229" r="22" fill="#DD7E74"/>
-  <path d="M144 176.5C166.4 130.1 220.667 102.5 245 94.5C309.4 73.7 366.5 100.167 387 116C360.6 126 308.7 157.8 311.5 205C314.3 252.2 359.667 293.667 382 308.5C368.8 345.7 327.5 373 308.5 382C253.7 397.6 194 379.833 171 368.5C116.6 307.7 125.333 224.5 144 176.5Z" fill="#FFF8F4"/>
-  <path d="M171 147C212.2 156.6 286.833 187.667 319 202.5C358.2 220.5 390.333 265.667 401.5 286C392.3 331.2 358.667 358.5 343 367C333.5 335.5 313.2 261.4 308 245C300.6 221.8 282.167 197 274 188L236.5 357C208.1 357.8 180.333 346.667 170 341C159.2 322.6 140.833 275 154.5 231C168.167 187 174.5 157 171 147Z" fill="#F7DAD2"/>
-  <text x="260" y="455" text-anchor="middle" fill="#241B1E" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="700">3 PLY</text>
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="88" fill="#FFF8F3"/>
+  <ellipse cx="454" cy="740" rx="244" ry="52" fill="#000000" fill-opacity="0.08"/>
+  <g>
+    <path d="M210 395C210 365.729 233.729 342 263 342H385C414.271 342 438 365.729 438 395V591C438 620.271 414.271 644 385 644H263C233.729 644 210 620.271 210 591V395Z" fill="url(#wrapBody3)"/>
+    <ellipse cx="324" cy="388" rx="104" ry="28" fill="#F8C9BF"/>
+    <ellipse cx="324" cy="388" rx="33" ry="11" fill="#D39B95"/>
+    <ellipse cx="324" cy="388" rx="17" ry="6" fill="#AB766F"/>
+    <path d="M210 395C210 365.729 233.729 342 263 342H385C414.271 342 438 365.729 438 395V463C410.667 477 372.667 484 324 484C277.333 484 239.333 476.667 210 462V395Z" fill="#FFFFFF" fill-opacity="0.16"/>
+    <g transform="translate(245 425)">
+      <rect x="0" y="0" width="157" height="99" rx="28" fill="#111111" fill-opacity="0.78"/>
+      <circle cx="36" cy="30" r="25" fill="url(#logoCircle3)"/>
+      <path d="M22 27C26.8 16.2 35.6 10.3333 39 8.5L43 11.5C39.6667 14.5 36 20.3667 35.5 25.5C35 30.6333 31.2 34.9333 29.5 36.5C25.1 40.1 20.6 40.9 17 40C19.9333 37.6 20.8 30.6 22 27Z" fill="#FFF8F3"/>
+      <path d="M17 46C23.8 50.8 33.5 52.4 37.5 52.5C50.5667 52.5 57.7333 48.8 63 42.5" stroke="#FFF8F3" stroke-width="3.8" stroke-linecap="round"/>
+      <path d="M17 55C24.6 59 34.1667 60.5333 38 60.5C49.6 60.5 58.1667 57.8667 64 53" stroke="#FFF8F3" stroke-width="3.8" stroke-linecap="round" opacity="0.85"/>
+      <text x="77" y="36" fill="#F7C3B4" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="700">Majestix</text>
+      <text x="77" y="60" fill="#FFF8F3" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="2">TISSUE</text>
+    </g>
+  </g>
+  <g>
+    <path d="M438 423C438 392.072 463.072 367 494 367H602C632.928 367 658 392.072 658 423V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V423Z" fill="url(#paperBody3)"/>
+    <ellipse cx="548" cy="405" rx="101" ry="27" fill="#FFFDF9"/>
+    <ellipse cx="548" cy="405" rx="34" ry="12" fill="#D9D1C4"/>
+    <ellipse cx="548" cy="405" rx="16" ry="6" fill="#A89F95"/>
+    <path d="M522 485L723 682H470L522 485Z" fill="#EAE1CF"/>
+    <path d="M525 481L708 661H497L525 481Z" fill="#F6EEDF"/>
+    <path d="M535 487L688 637H526L535 487Z" fill="#FFF8EA"/>
+    <path d="M544 494L666 615H552L544 494Z" fill="#FFFDF1"/>
+    <path d="M438 423C438 392.072 463.072 367 494 367H602C632.928 367 658 392.072 658 423V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V520C470 537.333 507.667 546 551 546C593 546 628.667 537.333 658 520V612C658 642.928 632.928 668 602 668H494C463.072 668 438 642.928 438 612V423Z" fill="#000000" fill-opacity="0.04"/>
+  </g>
+  <rect x="301" y="757" width="300" height="56" rx="28" fill="#171214"/>
+  <text x="451" y="794" text-anchor="middle" fill="#FFF8F3" font-family="Manrope, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="7">3 PLY</text>
   <defs>
-    <linearGradient id="paint0_linear_22_12" x1="120" y1="90" x2="400" y2="370" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFD9CC"/>
-      <stop offset="1" stop-color="#D85674"/>
+    <linearGradient id="wrapBody3" x1="220" y1="350" x2="436" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7C7B9"/>
+      <stop offset="1" stop-color="#E47B74"/>
+    </linearGradient>
+    <linearGradient id="logoCircle3" x1="11" y1="5" x2="61" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6B5C4"/>
+      <stop offset="1" stop-color="#EA5A78"/>
+    </linearGradient>
+    <linearGradient id="paperBody3" x1="445" y1="379" x2="659" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#E7DDCB"/>
     </linearGradient>
   </defs>
 </svg>

@@ -44,7 +44,7 @@ export class AppComponent {
         'A practical tissue solution designed for schools, public facilities, transport hubs and commercial washrooms that require dependable stock movement.',
       bestFor: 'Bulk operations',
       finish: 'Lightweight, cost-efficient rolls',
-      image: 'assets/images/ply-1.svg'
+      image: 'assets/images/ply-1-photo.jpg'
     },
     {
       name: '2 Ply',
@@ -53,7 +53,7 @@ export class AppComponent {
         'Our most versatile range for offices, retail stores, clinics and hospitality spaces that need a premium feel without compromising volume supply.',
       bestFor: 'Corporate and retail',
       finish: 'Soft-touch comfort with durable layering',
-      image: 'assets/images/ply-2.svg'
+      image: 'assets/images/ply-2-photo.jpg'
     },
     {
       name: '3 Ply',
@@ -62,7 +62,7 @@ export class AppComponent {
         'Crafted for executive suites, boutique accommodation and discerning clients who want exceptional softness, absorbency and presentation.',
       bestFor: 'Hospitality and executive spaces',
       finish: 'Ultra-soft, thick and refined',
-      image: 'assets/images/ply-3.svg'
+      image: 'assets/images/ply-3-photo.jpg'
     }
   ];
 
