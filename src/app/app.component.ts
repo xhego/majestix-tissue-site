@@ -67,15 +67,27 @@ export class AppComponent {
   ];
 
   readonly highlights = [
-    'Professional tissue manufacturing',
-    'Consistent supply capacity',
-    'Retail and wholesale ready'
+    { value: '1-3', label: 'Ply range' },
+    { value: 'Bulk', label: 'Supply ready' },
+    { value: 'B2B', label: 'Buyer focused' }
   ];
 
   readonly capabilities = [
-    'Custom supply volumes for business buyers',
-    'Quality-focused production standards',
-    'Elegant presentation for modern brands'
+    {
+      icon: 'local_shipping',
+      title: 'Wholesale-ready output',
+      description: 'Supply planning built for distributors, resellers and commercial procurement teams.'
+    },
+    {
+      icon: 'verified',
+      title: 'Quality-focused production',
+      description: 'Consistent ply options for value-driven operations, everyday use and premium settings.'
+    },
+    {
+      icon: 'palette',
+      title: 'Elegant presentation',
+      description: 'A peach-and-black identity that feels clean, soft and ready for modern shelves.'
+    }
   ];
 
   activeIndex = 0;

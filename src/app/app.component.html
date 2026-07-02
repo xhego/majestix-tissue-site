@@ -8,120 +8,136 @@
       </div>
     </div>
 
-    <a mat-stroked-button class="contact-button" href="#contact">Request a quote</a>
+    <nav aria-label="Primary navigation">
+      <a href="#products">Products</a>
+      <a href="#standards">Standards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a mat-flat-button class="topbar-cta" href="#contact">
+      <mat-icon>mail</mat-icon>
+      Request a quote
+    </a>
   </mat-toolbar>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <mat-chip-set>
-          <mat-chip>Elegant tissue solutions</mat-chip>
-          <mat-chip>1 ply, 2 ply, 3 ply</mat-chip>
-        </mat-chip-set>
+        <span class="eyebrow">Elegant tissue solutions</span>
 
-        <h1>Professional toilet tissue products with a refined brand presence.</h1>
+        <h1>Toilet tissue made for modern business supply.</h1>
         <p class="hero-text">
-          Majestix Tissue Manufacturing delivers reliable, comfortable and beautifully presented tissue products
-          for businesses that care about quality, consistency and customer experience.
+          Majestix Tissue Manufacturing delivers reliable 1 ply, 2 ply and 3 ply toilet tissue for distributors,
+          retailers, hospitality teams and facilities that care about quality, consistency and presentation.
         </p>
 
         <div class="hero-actions">
-          <a mat-flat-button class="primary-cta" href="#products">Explore the range</a>
-          <a mat-button class="secondary-cta" href="#contact">Speak to sales</a>
+          <a mat-flat-button class="primary-cta" href="#products">
+            <mat-icon>inventory_2</mat-icon>
+            Explore range
+          </a>
+          <a mat-button class="secondary-cta" href="#contact">
+            <mat-icon>call</mat-icon>
+            Speak to sales
+          </a>
         </div>
 
-        <div class="quick-highlights">
+        <div class="hero-metrics" aria-label="Majestix tissue highlights">
           <article *ngFor="let item of highlights">
-            <mat-icon>verified</mat-icon>
-            <span>{{ item }}</span>
+            <strong>{{ item.value }}</strong>
+            <span>{{ item.label }}</span>
           </article>
         </div>
       </div>
 
-      <mat-card class="carousel-card" id="products">
-        <div class="carousel-frame">
-          <div class="carousel-image-panel">
-            <img [src]="activePly.image" [alt]="activePly.name + ' toilet tissue'">
-          </div>
-
-          <div class="carousel-copy">
-            <span class="eyebrow">Featured Ply Selection</span>
-            <h2>{{ activePly.name }}</h2>
-            <h3>{{ activePly.headline }}</h3>
-            <p>{{ activePly.description }}</p>
-
-            <div class="spec-grid">
-              <div>
-                <span>Best for</span>
-                <strong>{{ activePly.bestFor }}</strong>
-              </div>
-              <div>
-                <span>Finish</span>
-                <strong>{{ activePly.finish }}</strong>
-              </div>
-            </div>
-
-            <div class="carousel-dots" aria-label="Ply selections">
-              <button
-                *ngFor="let ply of plyOptions; let i = index"
-                type="button"
-                [class.active]="i === activeIndex"
-                [attr.aria-label]="'Show ' + ply.name"
-                (click)="setSlide(i)"
-              ></button>
-            </div>
+      <div class="hero-product" aria-label="Featured product">
+        <div class="product-image-shell">
+          <img [src]="activePly.image" [alt]="activePly.name + ' toilet tissue'">
+        </div>
+        <div class="product-panel">
+          <span class="eyebrow">Featured Ply</span>
+          <h2>{{ activePly.name }}</h2>
+          <p>{{ activePly.headline }}</p>
+          <div class="carousel-dots" aria-label="Ply selections">
+            <button
+              *ngFor="let ply of plyOptions; let i = index"
+              type="button"
+              [class.active]="i === activeIndex"
+              [attr.aria-label]="'Show ' + ply.name"
+              (click)="setSlide(i)"
+            >
+              {{ ply.name }}
+            </button>
           </div>
         </div>
-      </mat-card>
+      </div>
     </section>
 
-    <section class="value-strip">
-      <article *ngFor="let item of capabilities">
-        <mat-icon>workspace_premium</mat-icon>
-        <p>{{ item }}</p>
-      </article>
-    </section>
-
-    <section class="about-section">
+    <section class="products-section" id="products">
       <div class="section-copy">
-        <span class="section-tag">Why Majestix</span>
-        <h2>Manufacturing tissue products that feel premium and perform at scale.</h2>
+        <span class="section-tag">Product Range</span>
+        <h2>Choose the right ply for your customers, guests or facilities.</h2>
         <p>
-          We position every roll as a reflection of your business standards, combining efficient production with a
-          polished finish suitable for retail shelves, washroom facilities and hospitality environments.
+          Each option is designed for a clear buying need: dependable value, balanced everyday comfort, or a more
+          premium finish for elevated spaces.
         </p>
       </div>
 
-      <div class="info-cards">
-        <mat-card>
-          <span>Supply</span>
-          <h3>Wholesale-ready output</h3>
-          <p>Steady production planning for distributors, resellers and commercial procurement teams.</p>
-        </mat-card>
+      <div class="product-grid">
+        <article *ngFor="let ply of plyOptions; let i = index" [class.is-active]="i === activeIndex">
+          <button type="button" (click)="setSlide(i)" [attr.aria-label]="'View ' + ply.name">
+            <img [src]="ply.image" [alt]="ply.name + ' toilet tissue roll'">
+            <span>{{ ply.name }}</span>
+          </button>
+          <div>
+            <h3>{{ ply.headline }}</h3>
+            <p>{{ ply.description }}</p>
+            <dl>
+              <div>
+                <dt>Best for</dt>
+                <dd>{{ ply.bestFor }}</dd>
+              </div>
+              <div>
+                <dt>Finish</dt>
+                <dd>{{ ply.finish }}</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <mat-card>
-          <span>Presentation</span>
-          <h3>Elegant peach-and-black branding</h3>
-          <p>A modern visual identity designed to communicate cleanliness, softness and premium appeal.</p>
-        </mat-card>
+    <section class="standards-section" id="standards">
+      <div class="section-copy">
+        <span class="section-tag">Why Majestix</span>
+        <h2>Clean presentation backed by practical supply thinking.</h2>
+      </div>
 
-        <mat-card>
-          <span>Quality</span>
-          <h3>Comfort across every ply</h3>
-          <p>Options tailored for value-driven operations, balanced everyday use and high-end guest settings.</p>
-        </mat-card>
+      <div class="standards-grid">
+        <article *ngFor="let item of capabilities">
+          <mat-icon>{{ item.icon }}</mat-icon>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div>
         <span class="section-tag">Contact</span>
-        <h2>Let’s supply your business with the right tissue range.</h2>
+        <h2>Let us supply your business with the right tissue range.</h2>
+        <p>Share your preferred ply, quantity and delivery needs, and the team will help shape the right supply option.</p>
       </div>
 
       <div class="contact-actions">
-        <a mat-flat-button class="primary-cta" href="mailto:sales@majestixtissue.com">sales&#64;majestixtissue.com</a>
-        <a mat-stroked-button class="contact-button" href="tel:+27000000000">Call sales team</a>
+        <a mat-flat-button class="primary-cta" href="mailto:sales@majestixtissue.com">
+          <mat-icon>mail</mat-icon>
+          sales&#64;majestixtissue.com
+        </a>
+        <a mat-stroked-button class="contact-button" href="tel:+27000000000">
+          <mat-icon>call</mat-icon>
+          Call sales team
+        </a>
       </div>
     </section>
   </main>
