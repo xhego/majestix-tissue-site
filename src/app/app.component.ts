@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, DestroyRef, inject } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { interval } from 'rxjs';
 
 type PlyOption = {
   name: string;
@@ -34,8 +32,6 @@ type PlyOption = {
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  private readonly destroyRef = inject(DestroyRef);
-
   readonly plyOptions: PlyOption[] = [
     {
       name: '1 Ply',
@@ -92,21 +88,11 @@ export class AppComponent {
 
   activeIndex = 0;
 
-  constructor() {
-    interval(5000)
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(() => this.nextSlide());
-  }
-
   get activePly(): PlyOption {
     return this.plyOptions[this.activeIndex];
   }
 
   setSlide(index: number): void {
     this.activeIndex = index;
-  }
-
-  nextSlide(): void {
-    this.activeIndex = (this.activeIndex + 1) % this.plyOptions.length;
   }
 }
