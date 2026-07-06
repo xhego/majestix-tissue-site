@@ -26,5 +26,5 @@ npm run build:pages
 The published URL should be:
 
 ```text
-https://umhlubi.github.io/majestix-tissue/
+https://xhego.github.io/majestix-tissue-site/
 ```
